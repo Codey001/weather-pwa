@@ -13,6 +13,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="install-banner" style="display: none;">
+      <div style="background-color: #000; color: #fff; padding: 20px; text-align: center; position: fixed; bottom: 0; width: 100%;">
+        <p>Install our app for a better experience!</p>
+        <button id="install-button" style="background: #007BFF; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Install</button>
+        <button id="dismiss-button" style="background: transparent; color: #fff; border: none; padding: 10px 20px; cursor: pointer;">Dismiss</button>
+      </div>
+    </div>
+    
     <script>
         if('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
