@@ -13,6 +13,7 @@ const App = () => {
 
             setWeather(data);
             setQuery('');
+            e.target.blur()
         }
     }
 
