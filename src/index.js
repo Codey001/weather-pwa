@@ -2,6 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.js";
 
+
+document.getElementById('your-input-id').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.target.blur(); // Remove focus from the input field to hide the keyboard
+    }
+  });
+  
+
 function showInstallPopup() {
     const installBanner = document.getElementById('install-banner');
     installBanner.style.display = 'block'; // Show the banner
